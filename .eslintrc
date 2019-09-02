@@ -1,0 +1,20 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "hopscotch": true
+  },
+  "extends": ["plugin:import/recommended", "airbnb", "prettier", "prettier/react"],
+  "settings": {
+      "import/resolver": {"node": { "extensions": [ ".tsx", ".js", ".jsx", ".scss" ] }
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "react/destructuring-assignment": ["error", "never"],
+    "import/prefer-default-export": "off"
+  }
+}
