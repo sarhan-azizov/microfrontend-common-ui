@@ -1,0 +1,81 @@
+{
+  "scripts": {
+    "eslint": "eslint \"./src/**\"",
+    "storybook": "start-storybook",
+    "test": "concurrently \"npm run eslint\" \"jest\"",
+    "test:update": "jest --no-cache -u"
+  },
+  "dependencies": {
+    "@storybook/react": "5.1.11",
+    "classnames": "2.2.6",
+    "enzyme": "3.10.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-knobs": "5.1.11",
+    "@types/enzyme": "3.10.3",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.3",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/webpack": "4.39.1",
+    "@typescript-eslint/parser": "2.0.0",
+    "babel-loader": "8.0.6",
+    "concurrently": "4.1.2",
+    "enzyme-adapter-react-16": "1.14.0",
+    "enzyme-to-json": "3.4.0",
+    "eslint": "6.3.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "jest": "24.9.0",
+    "jest-junit": "8.0.0",
+    "postcss-cssnext": "3.1.0",
+    "postcss-import": "12.0.1",
+    "postcss-nested": "4.1.2",
+    "postcss-simple-vars": "5.0.2",
+    "prop-types": "15.7.2",
+    "storybook-readme": "5.0.8",
+    "ts-jest": "24.0.2",
+    "ts-loader": "6.0.4",
+    "typescript": "3.5.3",
+    "yarn": "1.17.3"
+  },
+  "engines": {
+    "node": ">=8.1.1"
+  },
+  "jest-junit": {
+    "outputDirectory": "reports"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^common-ui(.*)$": "<rootDir>/src$1",
+      "\\.(jpe?g|png|eot|otf|ttf|woff|woff2|svg)$": "./jest.file-stub.js",
+      "\\.(css|scss)$": "<rootDir>/jest.file-stub.js"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "coverageDirectory": "coverage"
+  },
+  "license": "UNLICENSED"
+}

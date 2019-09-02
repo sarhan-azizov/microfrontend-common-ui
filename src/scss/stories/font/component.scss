@@ -1,0 +1,48 @@
+@import "../../_fonts.scss";
+
+.table .item {
+  display: inline-block;
+  width: 100px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.mini {
+  font-size: $fs-mini;
+}
+
+.tiny {
+  font-size: $fs-tiny;
+}
+
+.small {
+  font-size: $fs-small;
+}
+
+.medium {
+  font-size: $fs-medium;
+}
+
+.large {
+  font-size: $fs-large;
+}
+
+.big {
+  font-size: $fs-big;
+}
+
+.huge {
+  font-size: $fs-huge;
+}
+
+.massive {
+  font-size: $fs-massive;
+}
+
+.banner {
+  font-size: $fs-banner;
+}
+
+.openSans {
+  font-family: $ff-base;
+}
