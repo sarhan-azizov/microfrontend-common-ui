@@ -1,1 +1,1 @@
-export { default as ColorPalette } from './component';
+export { default as ColorPalette } from './color-palette';

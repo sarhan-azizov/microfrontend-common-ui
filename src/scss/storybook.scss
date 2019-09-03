@@ -20,3 +20,35 @@ h3 {
 h4 {
   margin-bottom: 10px;
 }
+
+.table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0 #aaa;
+
+  th {
+    &:first-of-type {
+      border-radius: 5px 0 0 0;
+    }
+    &:last-child {
+      border-radius: 0 5px 0 0;
+    }
+    background: #5f6574;
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    font-family: Muli,sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cacfd3;
+    padding: 15px 40px;
+  }
+
+  td {
+    padding: 10px 40px;
+  }
+
+  tr:nth-child(odd) {
+    background: #fafafa;
+  }
+}

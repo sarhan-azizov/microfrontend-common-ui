@@ -9,7 +9,6 @@ import styles from './styles/button.scss';
 import { BUTTON_KINDS, BUTTON_SIZES, ButtonInterface } from './typing';
 
 export const Button = (props: ButtonInterface): JSX.Element => {
-    console.log('==>', props);
     const className = classNames(styles.root, props.className, {
         [styles[props.kind]]: props.kind,
         [styles[props.size]]: props.size,

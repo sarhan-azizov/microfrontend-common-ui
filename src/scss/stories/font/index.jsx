@@ -1,1 +1,1 @@
-export { default as Font } from './component';
+export { default as Font } from './font';

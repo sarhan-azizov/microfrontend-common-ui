@@ -1,9 +1,10 @@
 import React from 'react';
 import uuidv4 from 'uuid';
-import styles from './component.scss';
+
+import styles from './color-palette.scss';
 
 export const colorsList = [
-    ['#FFF', '$c-whit'],
+    ['#FFF', '$c-white'],
     ['#000', '$c-black'],
     ['#222', '$c-raisin-black'],
     ['#626E70', '$c-dim-grey'],
@@ -56,10 +57,11 @@ export const colorsList = [
 ];
 
 export const getPalette = palette => palette.map(([background, variable]) => (
-    <div className={styles.cell} key={uuidv4()}>
-        <i style={{ background }} className={styles.item}>
-            {background}
-        </i>
-        <div className={styles.variable}>{variable}</div>
-    </div>
+    <tr key={uuidv4()}>
+        <td>
+            <i style={{ background }} className={styles.item}/>
+        </td>
+        <td>{background}</td>
+        <td>{variable}</td>
+    </tr>
 ));

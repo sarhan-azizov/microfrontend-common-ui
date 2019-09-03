@@ -1,7 +1,7 @@
 ## Variables
 #### Usage
 ```SCSS
-@import 'common-ui/dist/scss/theme';
+@import '@common-ui/dist/scss/theme';
 ```
 
 #### Description
