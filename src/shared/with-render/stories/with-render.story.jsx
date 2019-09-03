@@ -3,14 +3,15 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs/react';
 import { withReadme } from 'storybook-readme';
 
-import storybookStyles from '../../scss/storybook.scss';
-import withRender from './with-render';
-import readme from './readme.md';
+import storybookStyles from '../../../scss/storybook.scss';
+import withRender from '../with-render';
+import readme from '../readme.md';
 
 const ComponentToWrap = () => <div style={{'align-self': 'center'}}>I'm WrappedComponent</div>;
 const ComponentToWrapWithRender = withRender()(ComponentToWrap);
 
 storiesOf('withRender', module)
+    .addParameters({ jest: ['with-render'] })
     .addDecorator(withKnobs)
     .addDecorator(withReadme([readme]))
     .add('Playground', () => (
