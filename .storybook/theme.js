@@ -7,9 +7,9 @@ export default create({
     colorSecondary: '#0099a7',
 
     // UI
-    appBg: '#282b33',
-    appContentBg: '#f8f8f8',
-    appBorderColor: '#f5f5f6',
+    appBg: '#373f51',
+    appContentBg: 'white',
+    appBorderColor: '#eee',
     appBorderRadius: 5,
 
     // Typography
@@ -22,12 +22,12 @@ export default create({
 
     // Toolbar default and active colors
     barTextColor: 'white',
-    barSelectedColor: 'red',
-    barBg: '#5f6574',
+    barSelectedColor: '#0099a7',
+    barBg: '#282b33',
 
     // Form colors
     inputBg: 'white',
-    inputBorder: '#f5f5f6',
+    inputBorder: '#ddd',
     inputTextColor: '$212529',
     inputBorderRadius: 5,
 

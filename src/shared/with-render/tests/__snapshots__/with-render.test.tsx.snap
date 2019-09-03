@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Render HOC should render the wrapped component 1`] = `
+<ComponentToWrap
+  hidden={false}
+/>
+`;
+
+exports[`With Render HOC shouldn't render the wrapped component 1`] = `""`;
+
+exports[`With Render HOC shouldn't showing the wrapped component 1`] = `
+<div
+  hidden={true}
+>
+  <ComponentToWrap
+    hidden={true}
+  />
+</div>
+`;

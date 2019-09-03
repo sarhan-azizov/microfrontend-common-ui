@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render component with active prop 1`] = `
+<Memo()
+  active={true}
+  hidden={false}
+  onClick={[MockFunction]}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with className prop 1`] = `
+<Memo()
+  className="className"
+  hidden={false}
+  onClick={[MockFunction]}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with default props 1`] = `
+<Memo()
+  hidden={false}
+  onClick={[MockFunction]}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with disabled prop 1`] = `
+<Memo()
+  disabled={true}
+  hidden={false}
+  onClick={[MockFunction]}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with kind prop 1`] = `
+<Memo()
+  hidden={false}
+  kind={0}
+  onClick={[MockFunction]}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with size prop 1`] = `
+<Memo()
+  hidden={false}
+  onClick={[MockFunction]}
+  size={3}
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render component with type reset 1`] = `
+<Memo()
+  hidden={false}
+  onClick={[MockFunction]}
+  type="button"
+>
+  <span>
+    content
+  </span>
+</Memo()>
+`;
+
+exports[`Button component should render hidden component 1`] = `
+<div
+  hidden={true}
+>
+  <Memo()
+    hidden={true}
+    onClick={[MockFunction]}
+  >
+    <span>
+      content
+    </span>
+  </Memo()>
+</div>
+`;
+
+exports[`Button component shouldn't render component 1`] = `""`;

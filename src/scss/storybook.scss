@@ -1,6 +1,22 @@
-@import "./_theme.scss";
+@import "./theme";
 
 body {
   font-family: $ff-base;
   font-size: $fs-base;
+  color: $charcoal;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 10px;
 }

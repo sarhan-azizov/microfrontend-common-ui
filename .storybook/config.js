@@ -1,7 +1,7 @@
 import { addParameters, configure } from '@storybook/react';
 
-import '../src/scss/storybook.scss';
 import theme from './theme';
+import '../src/scss/storybook.scss';
 
 addParameters({
     options: { theme },

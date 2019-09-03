@@ -1,12 +1,16 @@
-/*
-  https://invis.io/6SMWT6X32FC#/274991284_Color_Palette
-  https://coolors.co/
-*/
+/* https://coolors.co/ */
 
 $c-white: #FFF;
+$blue-munsell: #0099A7;
+$skobeloff: #01707B;
+$dark-sky-blue: #88ccd4;
+$charcoal: #373F51;
+
+
+/* old */
+$c-black: #000;
 $c-x11-gray: #BBBDBF;
 $c-black-shadow: #7A7A7A;
-$c-black: #000;
 $c-grey: #ccc;
 $c-dim-white: #eee;
 
@@ -71,4 +75,4 @@ $c-pineapple: #543866;
 $c-bright-ube: #C99AED;
 $c-pale-lavender: #EACFFF;
 
-$c-primary: $c-raisin-black !default;
+$c-primary: $charcoal !default;
