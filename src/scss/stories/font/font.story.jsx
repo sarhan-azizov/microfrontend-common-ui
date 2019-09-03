@@ -1,20 +1,25 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import {storiesOf} from '@storybook/react';
+import {withReadme} from 'storybook-readme';
+import classNames from "classnames";
 
-import styles from './font.scss';
 import storybookStyles from "../../storybook.scss";
+import styles from "./font.scss";
+import readme from './readme.md';
 
-export default () => (
-    <div className={storybookStyles.root}>
-        <h3>Color Palette</h3>
-        <table className={classNames(storybookStyles.table, styles.table)}>
-            <thead>
-                 <tr>
+storiesOf('Theme / Font', module)
+    .addDecorator(withReadme([readme]))
+    .add('Font Sizes', () => (
+        <div className={storybookStyles.root}>
+            <h3>Font Sizes</h3>
+            <table className={classNames(storybookStyles.table, styles.table)}>
+                <thead>
+                <tr>
                     <th>Font Size</th>
                     <th>Variables</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <td>
                         <span className={styles.mini}>
@@ -87,7 +92,33 @@ export default () => (
                     </td>
                     <td>$fs-banner</td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-);
+                </tbody>
+            </table>
+        </div>
+    ))
+    .add('Font Family', () => (
+        <div className={storybookStyles.root}>
+            <h3>Font Family</h3>
+            <table className={classNames(storybookStyles.table, styles.table)}>
+                <thead>
+                <tr>
+                    <th>Font Size</th>
+                    <th>Variables</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <span className={{'font-family': 'arial'}}>
+                            Arial
+                        </span>
+                    </td>
+                    <td>$ff-base</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    ));
+
+
+
