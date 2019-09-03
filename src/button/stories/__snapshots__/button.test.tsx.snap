@@ -50,7 +50,7 @@ exports[`Button component should render component with disabled prop 1`] = `
 exports[`Button component should render component with kind prop 1`] = `
 <Memo()
   hidden={false}
-  kind={0}
+  kind="primary"
   onClick={[MockFunction]}
 >
   <span>
@@ -63,7 +63,7 @@ exports[`Button component should render component with size prop 1`] = `
 <Memo()
   hidden={false}
   onClick={[MockFunction]}
-  size={3}
+  size="medium"
 >
   <span>
     content

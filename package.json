@@ -2,8 +2,9 @@
   "scripts": {
     "eslint": "eslint \"./src/**\"",
     "storybook": "start-storybook",
-    "test": "concurrently \"npm run eslint\" \"jest\"",
-    "test:update": "jest --no-cache -u"
+    "jest": "jest --no-cache -u --json --outputFile=./reports/.jest-test-results.json",
+    "test": "concurrently \"npm run eslint\" \"npm run jest\"",
+    "test:update": "npm run jest"
   },
   "dependencies": {
     "@storybook/react": "5.1.11",
@@ -16,6 +17,7 @@
     "uuid": "3.3.3"
   },
   "devDependencies": {
+    "@storybook/addon-jest": "^5.1.11",
     "@storybook/addon-knobs": "5.1.11",
     "@types/classnames": "2.2.9",
     "@types/enzyme": "3.10.3",

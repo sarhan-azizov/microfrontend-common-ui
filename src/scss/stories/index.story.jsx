@@ -6,7 +6,7 @@ import readme from './readme.md';
 import { ColorPalette } from './color-palette';
 import { Font } from './font';
 
-storiesOf('Assets', module)
+storiesOf('Theme', module)
     .addDecorator(withKnobs)
     .addDecorator(withReadme([readme]))
     .add('Color Palette', ColorPalette)

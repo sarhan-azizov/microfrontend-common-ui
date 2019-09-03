@@ -12,6 +12,7 @@ import styles from './button.scss';
 import storybookStyles from '../../scss/storybook.scss';
 
 storiesOf('Button', module)
+    .addParameters({ jest: ['button'] })
     .addDecorator(withKnobs)
     .addDecorator(withReadme([readme]))
     .add('Primary', () => {
