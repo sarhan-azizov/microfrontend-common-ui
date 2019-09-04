@@ -63,27 +63,3 @@ Button.defaultProps = {
 };
 
 export default compose(withRender(), React.memo)(Button);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
