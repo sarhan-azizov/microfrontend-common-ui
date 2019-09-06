@@ -1,14 +1,18 @@
-const convertPropertiesToString = (props, defaultProps) => Object.entries(props).filter(([prop, value]) => {
-    const parsedValue = props[prop] && props[prop].replace(/\{/g, '').replace(/\}/g, '');
+import { join, map, filter, compose, toPairs } from 'ramda';
 
-    return defaultProps[prop] && String(defaultProps[prop]) !== String(parsedValue) && `${prop}=${value}`;
-}).map(prop => prop.join('=')).join(' ');
+export const DEFAULT_PROP = "DEFAULT_PROP";
 
+const convertPropertiesToString = props => compose(
+    join(' '),
+    map(([key, val]) => val === true ? key : `${key}=${val}`),
+    filter(([key, value]) => value !== DEFAULT_PROP),
+    toPairs
+)(props);
 
-export const JSXToString = ({ component, props, defaultProps }) => {
+export const JSXToString = ({ component, props: { children, ...props } }) => {
     let str = `<${component} `;
-    str += convertPropertiesToString(props, defaultProps);
-    str += props.children ? `>${props.children}</Button>` : `/>`;
+    str += convertPropertiesToString(props);
+    str += children ? `>${children}</${component}>` : ` />`;
 
     return str;
 };

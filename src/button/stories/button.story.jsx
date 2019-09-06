@@ -6,7 +6,7 @@ import { boolean, text, select, withKnobs } from '@storybook/addon-knobs/react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import * as codeStyles from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import { JSXToString} from '../../../.storybook/helpers';
+import { DEFAULT_PROP, JSXToString} from '../../../.storybook/helpers';
 import { BUTTON_SIZES, BUTTON_KINDS } from "../typing";
 import readme from '../readme.md';
 
@@ -97,31 +97,28 @@ storiesOf('Button', module)
             className: text('className', styles.button)
         };
 
-        // Not finished
         const code = JSXToString({
             component: 'Button',
             props: {
-                kind: `{BUTTON_KINDS.${props.kind}}`,
-                size: `{BUTTON_SIZES.${props.size}}`,
-                rendered: `{${props.rendered}}`,
-                hidden: `{${props.hidden}}`,
-                disabled: `{${props.disabled}}`,
-                active: `{${props.active}}`,
-                type: `${props.type}`,
-                className: `{${props.className}}`,
+                //Children
+                children: props.children === null ? DEFAULT_PROP : props.children,
+
+                // Variables
+                size: props.size === BUTTON_SIZES.medium ? DEFAULT_PROP : `{BUTTON_SIZES.${props.size}}`,
+                kind: props.kind === BUTTON_KINDS.primary ? DEFAULT_PROP : `{BUTTON_KINDS.${props.kind}}`,
+
+                // Boolean
+                rendered: props.rendered === true ? DEFAULT_PROP : `{${props.rendered}}`,
+                hidden: props.hidden === false ? DEFAULT_PROP : props.hidden,
+                disabled: props.disabled === false ? DEFAULT_PROP : props.disabled,
+                active: props.active === false ? DEFAULT_PROP : props.active,
+
+                // String
+                type: props.type === 'submit' ? DEFAULT_PROP : `\"${props.type}\"`,
+                className: props.className === styles.button ? DEFAULT_PROP : `{\"${props.className}\"}`,
+
+                // Required
                 onClick: `""`
-            },
-            defaultProps: {
-                children: null,
-                size: 'BUTTON_SIZES.medium',
-                kind: 'BUTTON_KINDS.primary',
-                type: 'submit',
-
-                hidden: false,
-                disabled: false,
-                active: false,
-
-                className: undefined
             }
         });
 
