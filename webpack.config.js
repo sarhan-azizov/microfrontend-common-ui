@@ -6,18 +6,19 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
+        filename: '[name]-bundle.js',
         library: 'microfrontend-common-ui',
         libraryTarget: 'umd',
     },
-    externals: {
+/*    externals: {
         classnames: 'classnames',
         react: 'react',
         'prop-types': 'prop-types',
         'css-loader' : {
             commonjs: 'css-loader',
         }
-    },
+    },*/
+    devtool: 'none',
     module: {
         rules: [
             {
@@ -43,7 +44,7 @@ module.exports = {
             }
         ]
     },
-    plugins: [
+    /*plugins: [
         new BundleAnalyzerPlugin()
-    ]
+    ]*/
 };
