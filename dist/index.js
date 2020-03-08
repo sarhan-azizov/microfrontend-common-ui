@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("classNames"), require("prop-types"), require("react"));
+		module.exports = factory(require("classnames"), require("prop-types"), require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["classNames", "prop-types", "react"], factory);
+		define(["classnames", "prop-types", "react"], factory);
 	else if(typeof exports === 'object')
-		exports["microfrontend-common-ui"] = factory(require("classNames"), require("prop-types"), require("react"));
+		exports["microfrontend-common-ui"] = factory(require("classnames"), require("prop-types"), require("react"));
 	else
-		root["microfrontend-common-ui"] = factory(root["classNames"], root["prop-types"], root["react"]);
+		root["microfrontend-common-ui"] = factory(root["classnames"], root["prop-types"], root["react"]);
 })(window, function(__WEBPACK_EXTERNAL_MODULE_classnames__, __WEBPACK_EXTERNAL_MODULE_prop_types__, __WEBPACK_EXTERNAL_MODULE_react__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -180,12 +180,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _but
 
 /***/ "classnames":
 /*!*****************************!*\
-  !*** external "classNames" ***!
+  !*** external "classnames" ***!
   \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = __WEBPACK_EXTERNAL_MODULE_classnames__;\n\n//# sourceURL=webpack://microfrontend-common-ui/external_%22classNames%22?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_classnames__;\n\n//# sourceURL=webpack://microfrontend-common-ui/external_%22classnames%22?");
 
 /***/ }),
 

@@ -11,7 +11,7 @@ module.exports = {
         libraryTarget: 'umd',
     },
     externals: {
-        classnames: 'classNames',
+        classnames: 'classnames',
         react: 'react',
         'prop-types': 'prop-types',
         'css-loader' : {
