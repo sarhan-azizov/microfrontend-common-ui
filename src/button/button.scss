@@ -1,0 +1,20 @@
+.root {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background .3s, border-color .3s;
+  background: dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+
+  &:hover {
+    background: blue;
+  }
+
+  &:active {
+    background: darkblue;
+  }
+}
