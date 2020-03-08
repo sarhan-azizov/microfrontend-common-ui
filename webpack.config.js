@@ -6,7 +6,7 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name]-bundle.js',
+        filename: 'index.js',
         library: 'microfrontend-common-ui',
         libraryTarget: 'umd',
     },
