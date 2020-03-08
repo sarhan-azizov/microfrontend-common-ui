@@ -17,7 +17,6 @@ module.exports = {
         'css-loader' : {
             commonjs: 'css-loader',
         }
-
     },
     module: {
         rules: [
