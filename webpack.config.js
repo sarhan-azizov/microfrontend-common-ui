@@ -10,14 +10,14 @@ module.exports = {
         library: 'microfrontend-common-ui',
         libraryTarget: 'umd',
     },
-/*    externals: {
+   externals: {
         classnames: 'classnames',
         react: 'react',
         'prop-types': 'prop-types',
         'css-loader' : {
             commonjs: 'css-loader',
         }
-    },*/
+    },
     devtool: 'none',
     module: {
         rules: [
