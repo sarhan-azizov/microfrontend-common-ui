@@ -13,11 +13,12 @@ const Button = props => {
 };
 
 Button.propTypes = {
-    children: node,
+    children: node
 };
 
 Button.defaultProps = {
     children: null,
+    id: 'SarhanButton'
 };
 
 export default Button;

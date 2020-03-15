@@ -18,6 +18,7 @@ Icon.propTypes = {
 
 Icon.defaultProps = {
     children: null,
+    id: 'SarhanIcon'
 };
 
 export default Icon;

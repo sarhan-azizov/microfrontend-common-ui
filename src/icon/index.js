@@ -1,1 +1,1 @@
-export { default as Icon } from './icon';
+export { default as SarhanIcon } from './icon';
