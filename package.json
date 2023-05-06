@@ -30,7 +30,7 @@
     "@storybook/addon-actions": "^5.3.14",
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
-    "@storybook/react": "^5.3.14",
+    "@storybook/react": "^7.0.9",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-react-app": "^9.1.1",
